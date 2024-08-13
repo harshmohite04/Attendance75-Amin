@@ -11,9 +11,8 @@ import NavBar from '../compo/NavBar';
 const {width} = Dimensions.get('window');
 const scale = width / 320;
 
-const [div, setDiv] = useState('');
-
 const Division = ({navigation, route}) => {
+  const [div, setDiv] = useState('');
   const year = route.params.year;
   return (
     <View style={styles.container}>
@@ -24,7 +23,8 @@ const Division = ({navigation, route}) => {
             onPress={() => {
               const division = 'A';
               setDiv('A');
-              navigation.navigate('Subject', {year: year, divi: division});
+              console.log(div);
+              navigation.navigate('Subject', {year: year, division: division});
             }}
             style={styles.divList}>
             <Text style={styles.txt}>A</Text>
@@ -33,7 +33,7 @@ const Division = ({navigation, route}) => {
             onPress={() => {
               const division = 'B';
               setDiv('B');
-              navigation.navigate('Subject', {year: year, divi: division});
+              navigation.navigate('Subject', {year: year, division: division});
             }}
             style={styles.divList}>
             <Text style={styles.txt}>B</Text>
@@ -45,7 +45,7 @@ const Division = ({navigation, route}) => {
             onPress={() => {
               const division = 'C';
               setDiv('C');
-              navigation.navigate('Subject', {year: year, divi: division});
+              navigation.navigate('Subject', {year: year, division: division});
             }}
             style={styles.divList}>
             <Text style={styles.txt}>C</Text>
@@ -54,7 +54,7 @@ const Division = ({navigation, route}) => {
             onPress={() => {
               const division = 'D';
               setDiv('D');
-              navigation.navigate('Subject', {year: year, divi: division});
+              navigation.navigate('Subject', {year: year, division: division});
             }}
             style={styles.divList}>
             <Text style={styles.txt}>D</Text>
@@ -66,7 +66,7 @@ const Division = ({navigation, route}) => {
             onPress={() => {
               setDiv('E');
               const division = 'E';
-              navigation.navigate('Subject', {year: year, divi: division});
+              navigation.navigate('Subject', {year: year, division: division});
             }}
             style={styles.divList}>
             <Text style={styles.txt}>E</Text>
@@ -75,7 +75,7 @@ const Division = ({navigation, route}) => {
             onPress={() => {
               setDiv('F');
               const division = 'F';
-              navigation.navigate('Subject', {year: year, divi: division});
+              navigation.navigate('Subject', {year: year, division: division});
             }}
             style={styles.divList}>
             <Text style={styles.txt}>F</Text>
@@ -85,7 +85,7 @@ const Division = ({navigation, route}) => {
           onPress={() => {
             setDiv('G');
             const division = 'G';
-            navigation.navigate('Subject', {year: year, divi: division});
+            navigation.navigate('Subject', {year: year, division: division});
           }}
           style={styles.divList}>
           <Text style={styles.txt}>G</Text>
@@ -105,19 +105,21 @@ const styles = StyleSheet.create({
   body: {
     flex: 11,
     alignItems: 'center',
+    marginTop:20*scale
   },
   divList: {
-    borderRadius: 10 * scale,
+    borderRadius: 25 * scale,
     backgroundColor: 'red',
-    padding: 15 * scale,
-    margin: 30 * scale,
+    paddingVertical:5*scale,
+    margin: 15 * scale,
+    paddingHorizontal:80*scale
   },
   txt: {
     color: '#000000',
-    fontSize: 35 * scale,
+    fontSize: 30 * scale,
     fontWeight: '800',
   },
   direction: {
-    flexDirection: 'row',
+    // flexDirection: 'row',
   },
 });

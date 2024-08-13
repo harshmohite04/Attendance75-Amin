@@ -18,8 +18,9 @@ const Subject = ({navigation, route}) => {
       <NavBar />
       <View style={styles.body}>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubSP";
+            const subject ="SP";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -29,8 +30,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>System Programming</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubCn";
+            const subject ="CN";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -40,8 +42,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>Computer Networks</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubDwdm";
+            const subject ="DWDM";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -51,8 +54,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>Data WareHouse & Data Mining</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubDaa";
+            const subject ="DAA";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -62,8 +66,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>Design Analysis of Algorithm</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubOs";
+            const subject ="OS";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -73,8 +78,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>Operating System</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubSpLab";
+            const subject ="SP_LAB";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -84,8 +90,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>System Programming Lab</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubCnLab";
+            const subject ="CN_LAB";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -95,8 +102,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>Computer Networks Lab</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubDwdmLab";
+            const subject ="DWDM_LAB";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -106,8 +114,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>Data WareHouse & Data Mining Lab</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubOsLab";
+            const subject ="OS_LAB";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -117,8 +126,9 @@ const Subject = ({navigation, route}) => {
           <Text style={styles.txtL}>Operating System Lab</Text>
         </TouchableOpacity>
         <TouchableOpacity
+        style={styles.hr}
           onPress={() => {
-            const subject ="SubPm";
+            const subject ="PM";
             navigation.navigate('rollCall', {
               year: year,
               division: division,
@@ -150,4 +160,8 @@ const styles = StyleSheet.create({
     fontSize: 20 * scale,
     fontWeight: '500',
   },
+  hr:{
+    borderBottomWidth:1,
+    
+  }
 });

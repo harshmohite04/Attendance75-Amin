@@ -25,7 +25,7 @@ const Home = ({navigation}) => {
                 navigation.navigate('Division',{year:'FY'})
                 console.log(year)
               }}>
-              <Text style={styles.txt}>FY</Text>
+              <Text style={styles.txt}>First Year</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.coverYear}>
@@ -35,7 +35,7 @@ const Home = ({navigation}) => {
                 navigation.navigate('Division',{year:'SY'})
                 console.log(year)
               }}>
-              <Text style={styles.txt}>SY</Text>
+              <Text style={styles.txt}>Second Year</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.coverYear}>
@@ -45,7 +45,7 @@ const Home = ({navigation}) => {
                 navigation.navigate('Division',{year:'TY'})
                 console.log(year)
               }}>
-              <Text style={styles.txt}>TY</Text>
+              <Text style={styles.txt}>Third Year</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.coverYear}>
@@ -55,7 +55,7 @@ const Home = ({navigation}) => {
                 navigation.navigate('Division',{year:'LY'})
                 console.log(year)
               }}>
-              <Text style={styles.txt}>LY</Text>
+              <Text style={styles.txt}>Fourth Year</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -89,10 +89,13 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontSize: 35 * scale,
     fontWeight: '800',
+    marginTop:15*scale
   },
   coverYear: {
     backgroundColor: 'red',
     padding: 10 * scale,
-    borderRadius: 10 * scale,
+    borderRadius: 50 * scale,
+    paddingHorizontal:50 * scale,
+    alignItems:'center'
   },
 });
