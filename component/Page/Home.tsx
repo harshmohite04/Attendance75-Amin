@@ -18,8 +18,9 @@ const Home = ({navigation}) => {
       <View style={styles.body}>
         <Text style={styles.yearTxt}>Select Year</Text>
         <View style={styles.yearList}>
-          <View style={styles.coverYear}>
+          <View style={styles.coverYearD}>
             <TouchableOpacity
+              disabled={true}
               onPress={() => {
                 setYear('FY');
                 navigation.navigate('Division',{year:'FY'})
@@ -28,8 +29,9 @@ const Home = ({navigation}) => {
               <Text style={styles.txt}>First Year</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.coverYear}>
+          <View style={styles.coverYearD}>
             <TouchableOpacity
+              disabled={true}
               onPress={() => {
                 setYear('SY');
                 navigation.navigate('Division',{year:'SY'})
@@ -48,8 +50,9 @@ const Home = ({navigation}) => {
               <Text style={styles.txt}>Third Year</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.coverYear}>
+          <View style={styles.coverYearD}>
             <TouchableOpacity
+              disabled={true}
               onPress={() => {
                 setYear('LY');
                 navigation.navigate('Division',{year:'LY'})
@@ -69,7 +72,7 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'yellow',
+    backgroundColor: '#ffffff',
   },
   body: {
     flex: 11,
@@ -91,11 +94,18 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     marginTop:15*scale
   },
-  coverYear: {
-    backgroundColor: 'red',
+  coverYearD: {
+    backgroundColor: '#1FC392',
     padding: 10 * scale,
     borderRadius: 50 * scale,
     paddingHorizontal:50 * scale,
     alignItems:'center'
   },
+  coverYear:{
+    backgroundColor: '#49FAC5',
+    padding: 10 * scale,
+    borderRadius: 50 * scale,
+    paddingHorizontal:50 * scale,
+    alignItems:'center'
+  }
 });

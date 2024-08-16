@@ -24,7 +24,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>System Programming</Text>
@@ -36,7 +36,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Computer Networks</Text>
@@ -48,7 +48,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Data WareHouse & Data Mining</Text>
@@ -60,7 +60,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Design Analysis of Algorithm</Text>
@@ -72,7 +72,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Operating System</Text>
@@ -84,7 +84,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>System Programming Lab</Text>
@@ -96,7 +96,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Computer Networks Lab</Text>
@@ -108,7 +108,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Data WareHouse & Data Mining Lab</Text>
@@ -120,7 +120,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Operating System Lab</Text>
@@ -132,7 +132,7 @@ const Subject = ({navigation, route}) => {
             navigation.navigate('rollCall', {
               year: year,
               division: division,
-              sub: subject,
+              subject: subject,
             });
           }}>
           <Text style={styles.txtL}>Project Management</Text>
@@ -147,7 +147,7 @@ export default Subject;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'yellow',
+    backgroundColor: '#ffffff',
   },
   body: {
     flex: 11,
